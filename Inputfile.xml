@@ -1,0 +1,22 @@
+<ServiceRequest>
+ <data>
+ <WasScan>
+ <name>New WAS Discovery Scan launched from API</name>
+ <type>DISCOVERY</type>
+ <target>
+ <webApp>
+ <id>61975467</id>
+ </webApp>
+ <webAppAuthRecord>
+ <isDefault>true</isDefault>
+ </webAppAuthRecord>
+ <scannerAppliance>
+ <type>EXTERNAL</type>
+ </scannerAppliance>
+ </target>
+ <profile>
+ <id>1348057</id>
+ </profile>
+ </WasScan>
+</data>
+</ServiceRequest>
