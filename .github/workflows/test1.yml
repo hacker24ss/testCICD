@@ -31,7 +31,7 @@ jobs:
         
       # Runs a single discovery scan on eu pod
       - name: Run a one-line script2
-        run: curl -u "${{secrets.USERKEY}}" -H "content-type:text/xml" -X "POST" -d "<ServiceRequest>  <data> <WasScan> <name>New WAS Discovery Scan launched from API</name> <type>DISCOVERY</type> <target> <webApp> <id>61975467</id> </webApp> <webAppAuthRecord> <isDefault>true</isDefault> </webAppAuthRecord> <scannerAppliance> <type>EXTERNAL</type> </scannerAppliance> </target> <profile> <id>1348057</id> </profile> </WasScan></data></ServiceRequest>" "https://qualysapi.qualys.eu/qps/rest/3.0/launch/was/wasscan"
+        run: curl -H "Authorization:Basic cXVheXMtc3A5MDp1TGtiakBnaXRodWIyMTU=" -H "content-type:text/xml" -X "POST" -d "<ServiceRequest>  <data> <WasScan> <name>New WAS Discovery Scan launched from API</name> <type>DISCOVERY</type> <target> <webApp> <id>61975467</id> </webApp> <webAppAuthRecord> <isDefault>true</isDefault> </webAppAuthRecord> <scannerAppliance> <type>EXTERNAL</type> </scannerAppliance> </target> <profile> <id>1348057</id> </profile> </WasScan></data></ServiceRequest>" "https://qualysapi.qualys.eu/qps/rest/3.0/launch/was/wasscan"
 
 
       # Runs a set of commands using the runners shell
