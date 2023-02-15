@@ -30,8 +30,8 @@ jobs:
         run: echo Hello, world!
         
       # Runs a single discovery scan on eu pod
-     - name: Run a one-line script
-       run: echo Hello2, world!
+      - name: Run a one-line script2
+        run: echo Hello2, world!
 
 
       # Runs a set of commands using the runners shell
